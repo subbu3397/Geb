@@ -1,0 +1,452 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'></meta>
+<style>body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 200;
+}
+
+table {
+  margin: 5px;
+}
+
+div.date-test-ran {
+  font-size: small;
+  font-style: italic;
+}
+
+table.features-table {
+  width: 800px;
+}
+
+table.summary-table {
+  width: 800px;
+  text-align: left;
+  font-weight: bold;
+  font-size: small;
+}
+
+table.summary-table th {
+  background: lightblue;
+  padding: 6px;
+}
+
+table.summary-table td {
+  background: #E0E0E0;
+  padding: 6px;
+}
+
+pre.title {
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+pre.narrative {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 23px;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+.feature-description {
+  font-size: large;
+  background: lightblue;
+  padding: 12px;
+}
+
+.feature-toc-error {
+  color: #F89A4F;
+}
+
+.feature-toc-failure {
+  color: #FF8080;
+}
+
+.feature-toc-ignored {
+  color: lightgray;
+}
+
+.feature-toc-pass {
+  color: green;
+}
+
+.feature-description.error {
+  background: #F89A4F;
+}
+
+.feature-description.failure {
+  background: #FF8080;
+}
+
+.feature-description.ignored {
+  background: lightgray;
+}
+
+.feature-description.ignored .reason {
+  color: black;
+  font-style: italic;
+  font-size: small;
+}
+
+div.issues {
+  margin-top: 6px;
+  padding: 10px 5px 5px 5px;
+  background-color: lemonchiffon;
+  color: black;
+  font-weight: 500;
+  font-size: small;
+  max-width: 50%;
+}
+
+div.pending-feature {
+  background-color: dodgerblue;
+  color: white;
+  margin-top: 6px;
+  padding: 5px;
+  text-align: center;
+  font-size: small;
+  max-width: 120px;
+}
+
+div.problem-description {
+  padding: 10px;
+  background: pink;
+  border-radius: 10px;
+}
+
+div.problem-header {
+  font-weight: bold;
+  color: red;
+}
+
+div.problem-list {
+
+}
+
+table.ex-table th {
+  background: lightblue;
+  padding: 0px 5px 0px 5px;
+}
+
+table.ex-table td {
+  background: #E0E0E0;
+  padding: 0px 5px 0px 5px;
+}
+
+table td {
+  min-width: 50px;
+}
+
+col.block-kind-col {
+  width: 70px;
+}
+
+span.spec-header {
+  font-weight: bold;
+}
+
+div.spec-text {
+  /*color: green;*/
+}
+
+div.spec-status {
+  font-style: italic;
+}
+
+.ignored {
+  color: gray;
+}
+
+td.ex-result {
+  text-align: center;
+  background: white !important;
+}
+
+.ex-pass {
+  color: darkgreen;
+}
+
+.ex-fail {
+  color: red;
+  font-weight: bold;
+}
+
+div.block-kind {
+  margin: 2px;
+  font-style: italic;
+}
+
+div.block-text {
+
+}
+
+pre.block-source {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+pre.block-source.error {
+  background-color: pink;
+  color: red;
+  font-weight: bold;
+}
+
+pre.block-source.pre-error {
+
+}
+
+pre.block-source.before-error {
+  margin-bottom: -14px;
+}
+
+pre.block-source.after-error {
+  color: gray;
+  margin-top: -14px;
+}
+
+pre.block-source.post-error {
+  color: gray;
+}
+
+div.footer {
+  text-align: center;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+<h2>Report for com.xmplar.dcf.testclasses.LoginTest</h2>
+<hr></hr>
+<div class='summary-report'>
+<h3>Summary:</h3>
+<div class='date-test-ran'>Created on Thu Jul 12 12:29:46 IST 2018 by Arun</div>
+<table class='summary-table'>
+<thead>
+<th>Executed features</th>
+<th>Failures</th>
+<th>Errors</th>
+<th>Skipped</th>
+<th>Success rate</th>
+<th>Time</th>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.0%</td>
+<td>1 minutes, 58.891 seconds</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Features:</h3>
+<table class='features-table'>
+<colgroup>
+<col class='block-kind-col'></col>
+<col class='block-text-col'></col>
+</colgroup>
+<tbody>
+<ul id='toc'>
+<li>
+<a href='#1196877033' class='feature-toc-error'>Login to DCF application</a>
+</li>
+</ul>
+<tr>
+<td colspan='10'>
+<div class='feature-description error' id='1196877033'>
+<span>Login to DCF application</span>
+<span style='float: right; font-size: 60%;'>
+<a href='#toc'>Return</a>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Given:</div>
+</td>
+<td>
+<div class='block-text'>Login form with User Id and passwords fields</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>A user enters the valid User Id and passwords Id</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>Home page should be navigated</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>Click on legal menu and Click on legal Cases menu</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'> It should on Legal cases Page</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>When:</div>
+</td>
+<td>
+<div class='block-text'>Enter all mandatory fields and click search Button</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Then:</div>
+</td>
+<td>
+<div class='block-text'>Court Case Informations should be displayed</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Where:</div>
+</td>
+<td>
+<div class='block-text'>----</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class='block-kind'>Examples:</div>
+</td>
+<td>
+<div class='spec-examples'>
+<table class='ex-table'>
+<thead>
+<th class='ex-header'>users</th>
+<th class='ex-header'>search</th>
+</thead>
+<tbody>
+<tr class='ex-fail'>
+<td class='ex-value'>{"UserName":"vpeel","Password":"1803166"}</td>
+<td class='ex-value'>{"Status":"Filed","Type":"C&amp;P","Category":"Court Case","Assignmenttype":"Primary Assignment","Attorney":"Ln_12469095,Fn_12469095 Mn","Legalregion":"Office of the General Counsel"}</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>{"UserName":"","Password":""}</td>
+<td class='ex-value'>{"Status":"","Type":"","Category":"","Assignmenttype":"","Attorney":"","Legalregion":""}</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>{"UserName":"","Password":""}</td>
+<td class='ex-value'>{"Status":"","Type":"","Category":"","Assignmenttype":"","Attorney":"","Legalregion":""}</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>{"UserName":"","Password":""}</td>
+<td class='ex-value'>{"Status":"","Type":"","Category":"","Assignmenttype":"","Attorney":"","Legalregion":""}</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+<tr class='ex-fail'>
+<td class='ex-value'>{"UserName":"","Password":""}</td>
+<td class='ex-value'>{"Status":"","Type":"","Category":"","Assignmenttype":"","Attorney":"","Legalregion":""}</td>
+<td class='ex-result'>FAIL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td>
+<div class='spec-status'>0/5 passed</div>
+</td>
+</tr>
+<tr>
+<td colspan='10'>
+<div class='problem-description'>
+<div class='problem-header'>The following problems occurred:</div>
+<div class='problem-list'>
+<ul>
+<li>
+<div>[[UserName:vpeel, Password:1803166], [Status:Filed, Type:C&amp;P, Category:Court Case, Assignmenttype:Primary Assignment, Attorney:Ln_12469095,Fn_12469095 Mn, Legalregion:Office of the General Counsel]]</div>
+<ul>
+<li>
+<pre>geb.waiting.WaitTimeoutException: condition did not pass in 20.0 seconds (failed with exception)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[[UserName:, Password:], [Status:, Type:, Category:, Assignmenttype:, Attorney:, Legalregion:]]</div>
+<ul>
+<li>
+<pre>Condition failed with Exception:<br/><br/>at Home<br/>|<br/>geb.waiting.WaitTimeoutException: condition did not pass in 20.0 seconds (failed with exception)<br/></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[[UserName:, Password:], [Status:, Type:, Category:, Assignmenttype:, Attorney:, Legalregion:]]</div>
+<ul>
+<li>
+<pre>org.openqa.selenium.WebDriverException: chrome not reachable<br/>  (Session info: chrome=67.0.3396.99)<br/>  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>Command duration or timeout: 6.02 seconds<br/>Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;<br/>System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_162&apos;<br/>Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\Arun\AppData\Local\Temp\scoped_dir12184_18392}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]<br/>Session ID: afdcc47e42ba1b76e1dc921ce5925416</pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[[UserName:, Password:], [Status:, Type:, Category:, Assignmenttype:, Attorney:, Legalregion:]]</div>
+<ul>
+<li>
+<pre>org.openqa.selenium.WebDriverException: chrome not reachable<br/>  (Session info: chrome=67.0.3396.99)<br/>  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>Command duration or timeout: 6.01 seconds<br/>Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;<br/>System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_162&apos;<br/>Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\Arun\AppData\Local\Temp\scoped_dir12184_18392}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]<br/>Session ID: afdcc47e42ba1b76e1dc921ce5925416</pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<div>[[UserName:, Password:], [Status:, Type:, Category:, Assignmenttype:, Attorney:, Legalregion:]]</div>
+<ul>
+<li>
+<pre>org.openqa.selenium.WebDriverException: chrome not reachable<br/>  (Session info: chrome=67.0.3396.99)<br/>  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>Command duration or timeout: 6.01 seconds<br/>Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;<br/>System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_162&apos;<br/>Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\Arun\AppData\Local\Temp\scoped_dir12184_18392}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=67.0.3396.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]<br/>Session ID: afdcc47e42ba1b76e1dc921ce5925416</pre>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr></hr>
+<div class='footer'>Generated by <a href='https://github.com/renatoathaydes/spock-reports'>Athaydes Spock Reports</a></div>
+</body>
+</html>

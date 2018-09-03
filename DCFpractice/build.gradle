@@ -1,0 +1,53 @@
+// Apply the java-library plugin to add support for Java Library
+apply plugin: 'groovy'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+dependencies {
+
+		// Groovy
+	   compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.5.0-beta-1'
+			
+	   // Geb core
+		
+	   compile group: 'org.gebish', name: 'geb-core', version: '1.1.1'
+	   
+	   // If using Spock, need to depend on geb-spock
+	   compile group: 'org.gebish', name: 'geb-spock', version: '1.1.1'
+	   testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
+	   
+	   // Spock reports
+	   testCompile('com.athaydes:spock-reports:1.3.2'){
+		   transitive = false // this avoids affecting your version of Groovy/Spock
+	   }
+	   
+	   // If using JUnit, need to depend on geb-junit (3 or 4)
+	   testCompile "org.gebish:geb-junit4:1.1.1"
+	   testCompile "junit:junit-dep:4.8.2"
+	   
+	   // webDrivers
+	   testCompile "org.seleniumhq.selenium:selenium-firefox-driver:3.5.3"
+	   testRuntime "org.seleniumhq.selenium:selenium-support:3.5.3"
+	   compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '2.32.0'
+	   
+	   // Ant
+	   compile group: 'org.apache.ant', name: 'ant', version: '1.10.1'
+	
+	   // GSON
+	   compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+	   
+	// Read 2017 excel file
+	   compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
+	   compile group: 'org.apache.poi', name: 'poi', version: '3.17'
+	   
+	   
+	   
+	   compile group: 'org.slf4j', name: 'slf4j-api', version: '1.8.0-alpha2'
+	   testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.8.0-alpha2'
+}
+

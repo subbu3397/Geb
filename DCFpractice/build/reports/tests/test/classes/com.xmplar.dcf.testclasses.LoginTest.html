@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.xmplar.dcf.testclasses.LoginTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.xmplar.dcf.testclasses.LoginTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.xmplar.dcf.testclasses.html">com.xmplar.dcf.testclasses</a> &gt; LoginTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.541s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Login to DCF application"></a>
+<h3 class="failures">Login to DCF application</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.navigator.factory.BrowserBackedNavigatorFactory.&lt;init&gt;(BrowserBackedNavigatorFactory.groovy:35)
+	at geb.Configuration.createNavigatorFactory(Configuration.groovy:417)
+	at geb.Browser.createNavigatorFactory(Browser.groovy:133)
+	at geb.Browser.getNavigatorFactory(Browser.groovy:121)
+	at geb.Page.init(Page.groovy:144)
+	at geb.Browser.createPage(Browser.groovy:855)
+	at geb.Browser.to(Browser.groovy:548)
+	at geb.Browser.to(Browser.groovy:537)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:56)
+	at com.xmplar.dcf.testclasses.LoginTest.Login to DCF application(LoginTest.groovy:13)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.Browser.clearCookies(Browser.groovy:641)
+	at geb.Browser.clearCookiesQuietly(Browser.groovy:649)
+	at geb.spock.GebSpec.resetBrowser(GebSpec.groovy:50)
+	at geb.spock.GebSpec.cleanup(GebSpec.groovy:73)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.navigator.factory.BrowserBackedNavigatorFactory.&lt;init&gt;(BrowserBackedNavigatorFactory.groovy:35)
+	at geb.Configuration.createNavigatorFactory(Configuration.groovy:417)
+	at geb.Browser.createNavigatorFactory(Browser.groovy:133)
+	at geb.Browser.getNavigatorFactory(Browser.groovy:121)
+	at geb.Page.init(Page.groovy:144)
+	at geb.Browser.createPage(Browser.groovy:855)
+	at geb.Browser.to(Browser.groovy:548)
+	at geb.Browser.to(Browser.groovy:537)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:56)
+	at com.xmplar.dcf.testclasses.LoginTest.Login to DCF application(LoginTest.groovy:13)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.Browser.clearCookies(Browser.groovy:641)
+	at geb.Browser.clearCookiesQuietly(Browser.groovy:649)
+	at geb.spock.GebSpec.resetBrowser(GebSpec.groovy:50)
+	at geb.spock.GebSpec.cleanup(GebSpec.groovy:73)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.navigator.factory.BrowserBackedNavigatorFactory.&lt;init&gt;(BrowserBackedNavigatorFactory.groovy:35)
+	at geb.Configuration.createNavigatorFactory(Configuration.groovy:417)
+	at geb.Browser.createNavigatorFactory(Browser.groovy:133)
+	at geb.Browser.getNavigatorFactory(Browser.groovy:121)
+	at geb.Page.init(Page.groovy:144)
+	at geb.Browser.createPage(Browser.groovy:855)
+	at geb.Browser.to(Browser.groovy:548)
+	at geb.Browser.to(Browser.groovy:537)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:56)
+	at com.xmplar.dcf.testclasses.LoginTest.Login to DCF application(LoginTest.groovy:13)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.Browser.clearCookies(Browser.groovy:641)
+	at geb.Browser.clearCookiesQuietly(Browser.groovy:649)
+	at geb.spock.GebSpec.resetBrowser(GebSpec.groovy:50)
+	at geb.spock.GebSpec.cleanup(GebSpec.groovy:73)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.navigator.factory.BrowserBackedNavigatorFactory.&lt;init&gt;(BrowserBackedNavigatorFactory.groovy:35)
+	at geb.Configuration.createNavigatorFactory(Configuration.groovy:417)
+	at geb.Browser.createNavigatorFactory(Browser.groovy:133)
+	at geb.Browser.getNavigatorFactory(Browser.groovy:121)
+	at geb.Page.init(Page.groovy:144)
+	at geb.Browser.createPage(Browser.groovy:855)
+	at geb.Browser.to(Browser.groovy:548)
+	at geb.Browser.to(Browser.groovy:537)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:56)
+	at com.xmplar.dcf.testclasses.LoginTest.Login to DCF application(LoginTest.groovy:13)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.Browser.clearCookies(Browser.groovy:641)
+	at geb.Browser.clearCookiesQuietly(Browser.groovy:649)
+	at geb.spock.GebSpec.resetBrowser(GebSpec.groovy:50)
+	at geb.spock.GebSpec.cleanup(GebSpec.groovy:73)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.navigator.factory.BrowserBackedNavigatorFactory.&lt;init&gt;(BrowserBackedNavigatorFactory.groovy:35)
+	at geb.Configuration.createNavigatorFactory(Configuration.groovy:417)
+	at geb.Browser.createNavigatorFactory(Browser.groovy:133)
+	at geb.Browser.getNavigatorFactory(Browser.groovy:121)
+	at geb.Page.init(Page.groovy:144)
+	at geb.Browser.createPage(Browser.groovy:855)
+	at geb.Browser.to(Browser.groovy:548)
+	at geb.Browser.to(Browser.groovy:537)
+	at geb.spock.GebSpec.methodMissing(GebSpec.groovy:56)
+	at com.xmplar.dcf.testclasses.LoginTest.Login to DCF application(LoginTest.groovy:13)
+</pre>
+</span>
+<span class="code">
+<pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:754)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at geb.driver.NameBasedDriverFactory.getDriver(NameBasedDriverFactory.groovy:44)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy:85)
+	at geb.driver.CachingDriverFactory.getDriver_closure3(CachingDriverFactory.groovy)
+	at geb.driver.CachingDriverFactory$SimpleCache.get(CachingDriverFactory.groovy:32)
+	at geb.driver.CachingDriverFactory.getDriver(CachingDriverFactory.groovy:84)
+	at geb.Configuration.createDriver(Configuration.groovy:382)
+	at geb.Configuration.getDriver(Configuration.groovy:371)
+	at geb.Browser.getDriver(Browser.groovy:111)
+	at geb.Browser.clearCookies(Browser.groovy:641)
+	at geb.Browser.clearCookiesQuietly(Browser.groovy:649)
+	at geb.spock.GebSpec.resetBrowser(GebSpec.groovy:50)
+	at geb.spock.GebSpec.cleanup(GebSpec.groovy:73)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Login to DCF application</td>
+<td>1.541s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO com.athaydes.spockframework.report.internal.ConfigLoader - SpockReports config loaded: {com.athaydes.spockframework.report.showCodeBlocks=false, com.athaydes.spockframework.report.template.TemplateReportCreator.reportFileExtension=md, com.athaydes.spockframework.report.testSourceRoots=src/test/groovy, com.athaydes.spockframework.report.IReportCreator=com.athaydes.spockframework.report.internal.HtmlReportCreator, com.athaydes.spockframework.report.outputDir=build/spock-reports, com.athaydes.spockframework.report.internal.HtmlReportCreator.inlineCss=true, com.athaydes.spockframework.report.internal.HtmlReportCreator.featureReportCss=spock-feature-report.css, com.athaydes.spockframework.report.hideEmptyBlocks=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.summaryReportCss=spock-summary-report.css, com.athaydes.spockframework.report.projectVersion=Unknown, com.athaydes.spockframework.report.template.TemplateReportCreator.specTemplateFile=/templateReportCreator/spec-template.md, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryTemplateFile=/templateReportCreator/summary-template.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.excludeToc=false, com.athaydes.spockframework.report.template.TemplateReportCreator.enabled=true, com.athaydes.spockframework.report.projectName=, com.athaydes.spockframework.report.template.TemplateReportCreator.summaryFileName=summary.md, com.athaydes.spockframework.report.internal.HtmlReportCreator.printThrowableStackTrace=false, com.athaydes.spockframework.report.internal.HtmlReportCreator.enabled=true}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.3</a> at 9 Jul, 2018 6:59:29 PM</p>
+</div>
+</div>
+</body>
+</html>
